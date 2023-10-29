@@ -20,11 +20,9 @@ You might run into imports errors for cookie or for the @auth/core internals.
 Uses aliases if you are running into import errors.
 
 ```ts
-import { resolve } from "node:path"
-
 export default defineNuxtConfig({
   alias: {
-    cookie: resolve(__dirname, "node_modules/cookie")
+    cookie: 'cookie'
   }
 })
 ```
